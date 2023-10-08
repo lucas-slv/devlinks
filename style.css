@@ -31,7 +31,6 @@ ul {
 }
 
 body {
-    /* backgroung: color, image, repeat, position/size */
     background: var(--bg-url) no-repeat top center/cover;
 }
 
@@ -41,9 +40,8 @@ body * {
 }
 
 #container {
-    width: 360px;
-    /* height: 712px; */
-    /* border: solid 1px red; */
+    width: 100%;
+    max-width: 588px;
     margin: 56px auto 0;
     padding: 0 24px;
 }
@@ -66,7 +64,6 @@ body * {
     position: relative;
     width: 64px;
     margin: 4px auto;
-    /* padding: 8px 0; */
 }
 
 #switch button {
@@ -100,7 +97,6 @@ body * {
 }
 
 ul {
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -128,7 +124,6 @@ ul li a:hover {
 }
 
 #social-links {
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     padding: 24px 0;
@@ -150,7 +145,6 @@ ul li a:hover {
 }
 
 footer {
-    /* background-color: red; */
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
