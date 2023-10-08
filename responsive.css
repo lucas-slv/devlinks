@@ -7,6 +7,10 @@
   .light {
     --bg-url: url('./assets/bg-desktop-light.jpg');
   }
+
+  #container {
+    max-width: 408px;
+  }
 }
 
 @media screen and (max-width: 320px) {
