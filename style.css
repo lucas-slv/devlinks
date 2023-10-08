@@ -17,6 +17,7 @@ ul {
     --surface-color-hover: rgba(255, 255, 255, 0.05);
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url('./assets/moon-stars.svg');
+    --text-decoration-color: #fff;
 }
 
 .light {
@@ -27,7 +28,7 @@ ul {
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(0, 0, 0, 0.1);
     --switch-bg-url: url('./assets/sun.svg');
-
+    --text-decoration-color: #000;
 }
 
 body {
@@ -42,7 +43,7 @@ body * {
 
 #container {
     width: 100%;
-    max-width: 588px;
+    max-width: 408px;
     margin: 56px auto 0;
     padding: 0 24px;
 }
@@ -77,7 +78,7 @@ body * {
     z-index: 1;
     top: 50%;
     left: 0;
-    animation: slide-out .2s;
+    animation: slide-out .2s linear;
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -87,7 +88,7 @@ body * {
 }
 
 .light #switch button {
-    animation: slide-in .2s forwards;
+    animation: slide-in .2s linear forwards;
 }
 
 #switch span {
@@ -174,6 +175,6 @@ footer {
 }
 
 footer > a {
-    text-decoration: underline 1px solid #fff;
+    text-decoration: underline 1px solid var(--text-decoration-color);
 }
 
