@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+  
+  :root {
+    --bg-url: url('./assets/bg-desktop.jpg');
+  }
+
+  .light {
+    --bg-url: url('./assets/bg-desktop-light.jpg');
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background: var(--bg-url) repeat-y top center/cover;
+  }
+}
